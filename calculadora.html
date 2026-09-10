@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('favicon') }}">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    
+    <!-- Envia os dados para a rota /resultado via POST -->
+    <form action="/resultado" method="POST">
+        <input type="number" name="num1" placeholder="Número 1" required step="any">
+        
+        <select name="operacao">
+            <option value="soma">+</option>
+            <option value="subtracao">-</option>
+            <option value="multiplicacao">*</option>
+            <option value="divisao">/</option>
+        </select>
+        
+        <input type="number" name="num2" placeholder="Número 2" required step="any">
+        
+        <!-- PASSO 2.d: Botão que exibe o resultado em outro template -->
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
