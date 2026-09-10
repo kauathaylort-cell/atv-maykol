@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1>Resultado do Cálculo matematico</h1>
+    <h2>O resultado é: {{ resultado }}</h2>
+    
+    <br>
+    <!-- Passo 2.d: Links para retornar ao início ou voltar à calculadora -->
+    <p><a href="/">Voltar ao Início</a></p>
+    <p><a href="/calculadora">Calcular novamente</a></p>
+</body>
+</html>
